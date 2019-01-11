@@ -1,0 +1,4 @@
+3.2     Write a program to blink LED1 of fig 1.15 at 5 sec interval.
+3.3     Write a program to blivk LED1 of fig 1.15 only for three times at 2 sec interval.
+3.3 (a)     Review for Loop.
+3.3 (b)     Repeat 3.3 using while loop and do...while loop instead of for loop.
