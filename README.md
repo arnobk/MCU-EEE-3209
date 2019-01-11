@@ -1,5 +1,3 @@
-## MCU EEE-3209
-
 # Microprocessor Interfacing and System Design
 ## EEE-3209
 
