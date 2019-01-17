@@ -1,5 +1,7 @@
 /* Question
   TEXT will move like a snake on 16x2 LCD Display.
+  LED-1 will TURN ON when, First char is in LINE-2.
+  LED-2 will TURN ON when, First char is in LINE-1.
 */
 #include<Wire.h>
 #include<LiquidCrystal_I2C.h>
