@@ -5,6 +5,8 @@
 #include<LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x3F,16,2);
 void setup() {
+  pinMode(8,OUTPUT);
+  pinMode(9,OUTPUT);
   lcd.init();
   lcd.backlight();
 }
@@ -21,8 +23,16 @@ void loop() {
           lcd.setCursor(i+pos,0);
           lcd.print(text[pos]);  
         }
+      if(i%2==0) 
+        {
+          digitalWrite(8,HIGH);
+          digitalWrite(9,LOW);
+        } else {
+          digitalWrite(8,LOW);
+          digitalWrite(9,HIGH);
+        }
     }  
-  delay(1000);
+  delay(500);
   lcd.clear();
   }  
 }
