@@ -8,7 +8,7 @@ void setup() {
   pinMode(13,OUTPUT);
   TCCR1A = 0x00;  //normal mode of operation for Divider-1
   TCCR1B = 0x00;  //normal mode of operation for Divider-2
-  TCCR1B = 0x02;  //Timer1 is ON clock = CLK/8 = 16/8 MHz = 2MHz = .5 mircosecond
+  TCCR1B = 0x02;  //Timer1(Divider-2 is in Operation at 8) is ON clock = CLK/8 = 16/8 MHz = 2MHz = .5 mircosecond
 }
 
 void loop() {
