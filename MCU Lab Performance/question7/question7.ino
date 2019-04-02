@@ -13,7 +13,7 @@ void setup()
 {
   Serial.begin(9600);
   rtc.begin();
-  /* New 3 Lines are used to set Sensor Time for the 1st time. It will save time on it's own memory*/
+  /* Next 3 Lines are used to set Sensor Time for the 1st time. It will save time on it's own memory*/
   //rtc.setDOW(TUESDAY);
   //rtc.setTime(22, 17, 20);
   //rtc.setDate(2, 4, 2019);
