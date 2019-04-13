@@ -15,7 +15,7 @@ byte addr[8];
 void setup() 
 {
  Serial.begin(9600);
- initarnobLCD();
+ initArnobLCD();
 }
 
 void loop() 
@@ -23,7 +23,7 @@ void loop()
   collectTempDS();
   computeTempDS();
   Serial.print(tempDS,2);
-  showOnarnobLCD();
+  showOnArnobLCD();
   delay(1000);
 }
 
@@ -61,13 +61,13 @@ void computeTempDS()
   tempDS = integerPart + fractionPart;
 }
 
-void initarnobLCD()
+void initArnobLCD()
 {
   arnobLCD.init();
   arnobLCD.backlight();
 }
 
-void showOnarnobLCD()
+void showOnArnobLCD()
 {
    arnobLCD.setCursor(0,0);
    arnobLCD.print("TempDS: ");
