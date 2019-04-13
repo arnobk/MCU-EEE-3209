@@ -58,7 +58,7 @@ void computeTempDS()
   int integerPart = (tempHByte<<8) | tempLByte;
   integerPart = integerPart>>4;
   float intPart = (float) integerPart;
-  tempDS = integerPart + fractionPart;
+  tempDS = intPart + fractionPart;
 }
 
 void initArnobLCD()
